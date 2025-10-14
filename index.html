@@ -1,67 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Building</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
-  <!-- Bootstrap CSS (optional if you want to use Bootstrap styles) -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Days+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Days+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonts cho công ty xây dựng -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS (optional if you want to use Bootstrap styles) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Bootstrap JS + Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
-</head>
-<body style="height: 10000px;">
-  <div class="container">
+    <!-- Bootstrap JS + Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body style="height: 10000px">
+    <nav class="nav_bar">
+      <img class="logo" src="./img/logo.png" alt="Logo" />
+
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+
+        <li class="nav__item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="homeDropdown"
+            role="button"
+            aria-expanded="false"
+          >
+            Service
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+            <li><a class="dropdown-item" href="#">Subitem 1</a></li>
+            <li><a class="dropdown-item" href="#">Subitem 2</a></li>
+            <li><a class="dropdown-item" href="#">Subitem 3</a></li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+
+        <li class="nav__item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
     <div class="hero">
-      <nav class="nav_bar">
-        <img class="logo" src="./img/logo.png" alt="Logo" />
-        
-        <ul class="nav__list">
-            <li class="nav__item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-
-          <li class="nav__item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" aria-expanded="false">
-              Service
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="homeDropdown">
-              <li><a class="dropdown-item" href="#">Subitem 1</a></li>
-              <li><a class="dropdown-item" href="#">Subitem 2</a></li>
-              <li><a class="dropdown-item" href="#">Subitem 3</a></li>
-            </ul>
-          </li>
-
-          <li class="nav__item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-
-          <li class="nav__item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
       <div class="content">
-        <div class="content-heading"><p>Công ty cổ phần <br>
-            xây dựng số 8 Hà Nội</p></div>
-        <div class="content-desc"></div>
+        <div class="content-heading">
+          <p>
+            CÔNG TY CỔ PHẦN <br />
+            XÂY DỰNG SỐ 8 HÀ NỘI
+          </p>
+        </div>
+        <div class="content-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ullam
+          nihil nesciunt laboriosam tenetur sint eligendi modi voluptatem labore
+          repellendus impedit officiis, quis aspernatur. Harum soluta atque
+          pariatur voluptas sunt? Aspernatur corrupti nesciunt aperiam libero
+          delectus assumenda fuga magnam nobis quam eius pariatur voluptate,
+          itaque, esse mollitia facere beatae nemo iusto ullam quaerat? Saepe
+          debitis facere blanditiis amet corrupti labore? Voluptatem asperiores
+          pariatur necessitatibus est doloremque distinctio, fugit dicta
+          quibusdam fugiat hic nulla maxime non odit neque sit tempore facilis
+          itaque obcaecati doloribus esse temporibus eius nobis! Alias, impedit
+          voluptatibus. Incidunt ipsam voluptas doloribus illum perspiciatis
+          quis blanditiis nemo sit? Similique totam natus maxime non sed. Soluta
+          a quidem maiores quaerat molestiae delectus in, dolorem nesciunt vero
+          culpa dignissimos
+        </div>
         <div class="content-more">
-            <a href="" class="content-more__btn"></a>
-            <a href="" class="content-more__btn"></a>
+          <a href="" class="content-more__services">Our services</a>
+          <a href="" class="content-more__projects">View Projects</a>
         </div>
       </div>
     </div>
-  </div>
-</body>
+
+    <div class="container">
+      <div class="about">
+        <p class="about-heading">Who are we</p>
+        <div class="about-content">
+          <div class="about-content__desc">
+            <div class="about-content___desc-heading">Về chúng tôi</div>
+            <div class="about-content___desc-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              cupiditate nam accusamus? Accusamus pariatur iure corporis,
+              facilis, non, culpa rem minus praesentium quidem provident
+              distinctio consectetur at ipsa cumque doloribus! Quibusdam omnis
+              voluptatibus aliquid, maxime quam laudantium similique sunt
+              pariatur quo adipisci maiores perspiciatis. Ad maxime tempora
+              molestiae dolores itaque fugiat quos, dolorem laborum, accusantium
+              deserunt aspernatur magni consectetur quas? Exercitationem
+              doloremque recusandae nostrum corporis pariatur unde inventore
+              perspiciatis, ipsa hic quasi iste asperiores cumque, molestias
+              sint alias facere veritatis nisi blanditiis libero nihil quos
+              omnis incidunt, maxime commodi. Adipisci. Amet temporibus, dicta
+              laboriosam corrupti atque praesentium iusto rem enim, id
+              similique, voluptatem distinctio nisi voluptates! Sit nemo totam
+              deleniti velit, culpa perferendis cumque aliquam asperiores sed
+              unde temporibus aut? Aspernatur fugiat doloremque nam quibusdam,
+              cum aliquam? Ullam in vero, itaque accusamus officiis dict
+            </div>
+          </div>
+          <div class="about-content__img">
+            <div class="about-content__img1">
+              <img src="./img/hero_img.png" alt="" />
+            </div>
+            <div class="about-content__img2">
+              <img src="./img/hero_img.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
