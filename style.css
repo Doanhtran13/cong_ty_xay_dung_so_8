@@ -185,7 +185,7 @@
 }
 .content-more__services:hover,
 .content-more__projects:hover {
-  color: #4a90e2;
+  color: #fff;
   transform: translateY(-2px);
 }
 
@@ -280,6 +280,14 @@
   font-weight: 1000;
   color: #ffffff;
   margin-top: 80px;
+  margin-bottom: 30px;
+}
+.service-desc {
+  font-family: "Noto Sans", sans-serif;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 50px;
 }
 .service-list {
@@ -288,6 +296,7 @@
   grid-template-rows: repeat(2, 1fr);
   column-gap: 20px;
   row-gap: 60px;
+  list-style: none;
 }
 .service-item__img img {
   width: 100%;
@@ -302,4 +311,177 @@
 }
 .service-item:hover {
   transform: scale(1.1);
+}
+
+/* ------------------contact--------------------- */
+.contact-heading {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 1000;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: #000053;
+  margin-bottom: 40px;
+  margin-top: 150px;
+  text-align: center;
+}
+.contact-desc {
+  font-family: "Noto Sans", sans-serif;
+  color: #000053;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.contact-content {
+  display: flex;
+  gap: 100px;
+}
+.contact-form {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-img {
+  width: 40%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 650px;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  border: none;
+  background-color: #f3f4f9;
+  padding: 18px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9fa3b1;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #4a4ee3;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+button {
+  background-color: #1c1678;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 0;
+}
+
+button:hover {
+  background-color: #130f55;
+}
+
+/* ---------info----------- */
+.info {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.info-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* -------------footer----------------- */
+.footer {
+  background-color: #000053;
+  width: 100vw;
+  height: 400px;
+}
+.footer-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  gap: 100px;
+  padding: 50px;
+}
+.footer-item__team {
+  display: flex;
+  align-items: center;
+}
+.company-name {
+  color: #fff;
+  margin-left: 20px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+.footer-item__desc {
+  color: #fff;
+  margin-top: 20px;
+}
+.footer-item1__item,
+.footer-item2__item {
+  list-style: none;
+}
+.footer-item1__item li,
+.footer-item2__item li {
+  gap: 50px;
+  display: flex;
+  margin-top: 30px;
+  color: #fff;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+}
+.footer-item1__heading,
+.footer-item2__heading {
+  color: #fff;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+.footer-item1,
+.footer-item2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-item1__item-list a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-item1__item-list a:hover {
+  color: #4a4ee3;
 }
